@@ -1,0 +1,272 @@
+/* Custom CSS for eCareScribe */
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+a:hover {
+    color: #1abc9c;
+}
+
+/* Header */
+header {
+    background-color: #34495e;
+    color: white;
+    padding: 60px 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+header p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+/* Features Section */
+#features {
+    background-color: #ffffff;
+    padding: 50px 0;
+}
+
+#features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+#features .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#features .col-md-4 {
+    padding: 20px;
+    text-align: center;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#features .col-md-4 h3 {
+    font-size: 1.8rem;
+}
+
+#features .col-md-4 p {
+    font-size: 1rem;
+}
+
+/* How It Works Section */
+#how-it-works {
+    background-color: #ecf0f1;
+    padding: 50px 0;
+}
+
+#how-it-works .row {
+    display: flex;
+    align-items: center;
+}
+
+#how-it-works .col-md-6 img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+#how-it-works .col-md-6 ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#how-it-works .col-md-6 ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Benefits Section */
+#benefits {
+    background-color: #ffffff;
+    padding: 50px 0;
+}
+
+#benefits h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+#benefits .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#benefits .col-md-4 {
+    padding: 20px;
+    text-align: center;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#benefits .col-md-4 h3 {
+    font-size: 1.8rem;
+}
+
+#benefits .col-md-4 p {
+    font-size: 1rem;
+}
+
+/* Call to Action Section */
+#get-started {
+    background-color: #2c3e50;
+    color: white;
+    padding: 50px 0;
+}
+
+#get-started h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#get-started p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+    background-color: #34495e;
+    color: white;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsive Styles */
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+
+    #features .row,
+    #benefits .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #how-it-works .row {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    #features h2,
+    #benefits h2,
+    #get-started h2 {
+        font-size: 2rem;
+    }
+
+    #features .col-md-4,
+    #benefits .col-md-4 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #how-it-works .col-md-6 ul li {
+        font-size: 1rem;
+    }
+}
+
+
+
+/* highlights section css start here */
+.highlights-section .highlights-card {
+    display: flex;
+    padding: 48px 48px 32px 48px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    flex: 1 0 0;
+
+    border-radius: 24px;
+    border: 1px solid var(--Stroke-1, #E0E0E0);
+    background: var(--Card-bg, #F0F0F0);
+
+    /* Card Shadow 1 */
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.05);
+    /* margin-bottom: 24px; */
+    height: 100%;
+}
+
+.highlights-section .highlights-card .highlights-card-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.highlights-section .highlights-card .highlights-icon {
+    width: 40.755px;
+    height: 48px;
+    flex-shrink: 0;
+}
+
+.highlights-section .highlights-card .highlights-card-header .highlights-heading {
+    color: var(--Primary-1, #0C4C75);
+
+    /* Card Title */
+    font-family: Manrope;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 48px */
+    letter-spacing: -0.32px;
+}
+
+.highlights-section .highlights-card .highlights-card-footer {
+    align-self: stretch;
+
+    color: var(--Grey-1, #4F4F4F);
+
+    /* Card Paragraph */
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    /* 32.4px */
+}
+
+.highlights-section .highlights-card .highlights-card-footer p {
+    margin-bottom: 0;
+}
+
+/* highlights section css ends here */
